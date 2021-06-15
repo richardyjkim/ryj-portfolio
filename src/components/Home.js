@@ -4,6 +4,7 @@ import { AppBar } from '@material-ui/core';
 import ListIcon from '@material-ui/icons/List';
 import ExpandMoreIcon from '@material-ui/icons/ExpandMore';
 import { Collapse } from '@material-ui/core';
+import { Link as Scroll } from 'react-scroll'
 
 
 const useStyles = makeStyles((theme) => ({
@@ -43,12 +44,12 @@ const useStyles = makeStyles((theme) => ({
 
 function Header() {
   const classes = useStyles();
-  const [collapsed, setCollapse] = useState(false);
+  const [checked, setChecked] = useState(false);
   useEffect(() => {
-    setCollapse(true);
+    setChecked(true);
   }, [])
   return (
-    <div className={classes.root}>
+    <div className={classes.root} id="header">
       <AppBar className={classes.appbar} elevation={0}>
         <Toolbar className={classes.appbarWrapper}>
           <h1 className={classes.appbarTitle}>YjWorld.</h1>
@@ -58,15 +59,16 @@ function Header() {
         </Toolbar>
       </AppBar>
 
-      <Collapse in={collapsed} {...(true ? { timeout: 2000 } : {})}
+      <Collapse in={checked} {...(checked ? { timeout: 2000 } : {})}
         collapsedHeight={50}>
         <div className={classes.container}>
           <h1 className={classes.title}>Welcome to YjWorld <br /></h1>
           <h2 >+ and I develop websites</h2>
-          <br />
+          <Scroll to="portfolios" smooth={true}>
           <IconButton>
             <ExpandMoreIcon className={classes.goDown} />
           </IconButton>
+          </Scroll>
         </div>
       </Collapse>
     </div>
