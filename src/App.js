@@ -1,6 +1,7 @@
 import { CssBaseline, makeStyles } from '@material-ui/core';
 import Home from './components/Home';
 import Portfolios from './components/Portfolios';
+import About from './components/About';
 
 const useStyles = makeStyles((theme) => ({
   root: {
@@ -16,6 +17,8 @@ function App() {
     <div className={classes.root}>
       <CssBaseline />
       <Home />
+      <About />
+      <br/><br/>
       <Portfolios />
 
     </div>

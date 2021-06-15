@@ -4,7 +4,7 @@ import { AppBar } from '@material-ui/core';
 import ListIcon from '@material-ui/icons/List';
 import ExpandMoreIcon from '@material-ui/icons/ExpandMore';
 import { Collapse } from '@material-ui/core';
-import { Link as Scroll } from 'react-scroll'
+import { Link as Scroll } from 'react-scroll';
 
 
 const useStyles = makeStyles((theme) => ({
@@ -64,10 +64,10 @@ function Header() {
         <div className={classes.container}>
           <h1 className={classes.title}>Welcome to YjWorld <br /></h1>
           <h2 >+ and I develop websites</h2>
-          <Scroll to="portfolios" smooth={true}>
-          <IconButton>
-            <ExpandMoreIcon className={classes.goDown} />
-          </IconButton>
+          <Scroll to="about" smooth={true}>
+            <IconButton>
+              <ExpandMoreIcon className={classes.goDown} />
+            </IconButton>
           </Scroll>
         </div>
       </Collapse>

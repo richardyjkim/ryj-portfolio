@@ -3,8 +3,10 @@ import { makeStyles } from '@material-ui/core/styles';
 import Card from '@material-ui/core/Card';
 import CardContent from '@material-ui/core/CardContent';
 import CardMedia from '@material-ui/core/CardMedia';
+import CardActionArea from '@material-ui/core/CardActionArea';
+import CardActions from '@material-ui/core/CardActions';
 import Typography from '@material-ui/core/Typography';
-import { Collapse } from '@material-ui/core';
+import Button from '@material-ui/core/Button';
 
 
 const useStyles = makeStyles({
@@ -27,14 +29,21 @@ const useStyles = makeStyles({
     fontWeight: 'bold',
     fontSize: '0.5vw',
     color: '#ddd'
+  },
+  button: {
+    fontSize: '0.75vw',
+    fontWeight: 'bold',
+    fontFamily: 'Nunito',
+    border: '1px',
+    borderColor: '#000'
   }
 });
 
-export default function PortfolioCard({ project, checked }) {
+export default function PortfolioCard({ project }) {
   const classes = useStyles();
   return (
-    // <Collapse in={checked} {...(checked ? { timeout: 2000 } : {})}>
-      <Card className={classes.root}>
+    <Card className={classes.root}>
+      <CardActionArea>
         <CardMedia
           className={classes.media}
           height="140"
@@ -49,7 +58,12 @@ export default function PortfolioCard({ project, checked }) {
             {project.description}
           </Typography>
         </CardContent>
-      </Card>
-    // </Collapse >
+      </CardActionArea>
+      <CardActions>
+        <Button className={classes.button}>
+          Go Live
+        </Button>
+      </CardActions>
+    </Card>
   );
 }
