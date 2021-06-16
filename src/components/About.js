@@ -96,10 +96,10 @@ export default function About() {
                     Find Me On
                 </Typography>
                   <Grid className={classes.icon} >
-                    <IconButton><EmailIcon /> </IconButton>
-                    <IconButton><GitHubIcon /> </IconButton>
-                    <IconButton><LinkedInIcon /></IconButton>
-                    <IconButton> <InstagramIcon /></IconButton>
+                    <Scroll to="contact" smooth={true}><IconButton><EmailIcon /> </IconButton></Scroll>
+                    <IconButton aria-label="linkedin.com" onClick={() => window.open('https://www.linkedin.com/in/richard-kim-670262204/')}><LinkedInIcon /> </IconButton>
+                    <IconButton aria-label="github.com" onClick={() => window.open('https://github.com/richardyjkim')}><GitHubIcon /></IconButton>
+                    <IconButton aria-label="instagram.com" onClick={() => window.open('https://www.instagram.com/immayj_05.15')}> <InstagramIcon /></IconButton>
                   </Grid>
 
                   <Scroll to="portfolios" smooth={true}>

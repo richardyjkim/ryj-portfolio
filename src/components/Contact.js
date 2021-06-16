@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React from 'react';
 import { makeStyles, IconButton } from '@material-ui/core/';
 import TextField from '@material-ui/core/TextField';
 import Container from '@material-ui/core/Container';
@@ -8,6 +8,7 @@ import HomeIcon from '@material-ui/icons/Home';
 import { Link as Scroll } from 'react-scroll';
 import Button from '@material-ui/core/Button';
 import useFormControls from '../static/ContactFormControls';
+import GetAppIcon from '@material-ui/icons/GetApp';
 
 
 
@@ -46,7 +47,7 @@ const useStyles = makeStyles((theme) => ({
     color: '#fff',
     fontSize: '3vw',
     display: "flex",
-    margin: '3vw',
+    margin: '2vw',
   },
 }));
 
@@ -95,13 +96,16 @@ export default function Contact() {
                     I truely Thank you for visiting my website,
                     if you have any questions please do not desitate me to contact me.
                     if you could leave breif message here, I will surely get back to you as soon as possible.
-                    Once Again Thank you so much for visiting
+                    Once Again Thank you so much for visiting. Please download my resume clicking download icon. or we will simple take you back to top with home icon.
                     </Typography>
                   <Scroll to="home" smooth={true}>
                     <IconButton>
                       <HomeIcon className={classes.goHome} />
                     </IconButton>
                   </Scroll>
+                  <IconButton aria-label="resume" onClick={() => window.open('https://drive.google.com/file/d/1hUiglyo0XzJdC2j-yF9FdvdVOi0D4YZb/view')}>
+                    <GetAppIcon className={classes.goHome} />
+                  </IconButton>
                 </Grid>
               </Grid>
             </Grid>
@@ -118,7 +122,7 @@ export default function Contact() {
                           onBlur={handleInputValue}
                           name={inputFieldValue.name}
                           label={inputFieldValue.label}
-                          error={errors[inputFieldValue.name]}
+                          error={errors[inputFieldValue.name] > 0}
                           multiline={inputFieldValue.multiline ?? false}
                           fullWidth
                           rows={inputFieldValue.rows ?? 1}

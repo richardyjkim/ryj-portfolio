@@ -1,6 +1,10 @@
 import { useState } from "react";
 import { validateEmail } from '../utils/helpers';
 
+
+function SendContactForm() {
+  return alert("Thank you, Your inquiery has been sent to richardyjkim@gmail.com")
+}
 const initialFormValues = {
   fullName: "",
   email: "",
@@ -75,9 +79,9 @@ export default function useFormControls() {
     e.preventDefault();
     const isValid =
       Object.values(errors).every((x) => x === "") && formIsValid();
-    // if (isValid) {
-    //   await PostContactForm(values, handleSuccess, handleError);
-    // }
+    if (isValid) {
+      await SendContactForm(values, handleSuccess, handleError);
+    }
   };
 
   return {
