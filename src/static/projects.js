@@ -26,7 +26,7 @@ const projects = [
   },
   {
     name: "workday Scheduler",
-    description: "Suspendisse magna lacus, suscipit in elementum sit amet, faucibus vel dui",
+    description: "Suspendisse magna lacus, suscipit in elementum sit amet, faucibus vel dui you we need one more line to grid to be fit, cnwiqsdk pqwkd loes.",
     image: process.env.PUBLIC_URL + '/images/portfolio/workday.png'
   },
 ];

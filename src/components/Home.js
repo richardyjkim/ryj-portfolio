@@ -12,7 +12,7 @@ const useStyles = makeStyles((theme) => ({
     display: 'flex',
     justifyContent: "center",
     alignItems: 'center',
-    height: '120vh',
+    height: '85vw',
     fontFamily: 'Nunito',
   },
   appbar: {
@@ -42,14 +42,14 @@ const useStyles = makeStyles((theme) => ({
   }
 }));
 
-function Header() {
+function Home() {
   const classes = useStyles();
   const [checked, setChecked] = useState(false);
   useEffect(() => {
     setChecked(true);
   }, [])
   return (
-    <div className={classes.root} id="header">
+    <div className={classes.root} id="home">
       <AppBar className={classes.appbar} elevation={0}>
         <Toolbar className={classes.appbarWrapper}>
           <h1 className={classes.appbarTitle}>YjWorld.</h1>
@@ -75,4 +75,4 @@ function Header() {
   );
 }
 
-export default Header;
+export default Home;

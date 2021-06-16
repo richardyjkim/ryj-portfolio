@@ -2,6 +2,7 @@ import { CssBaseline, makeStyles } from '@material-ui/core';
 import Home from './components/Home';
 import Portfolios from './components/Portfolios';
 import About from './components/About';
+import Contact from './components/Contact'
 
 const useStyles = makeStyles((theme) => ({
   root: {
@@ -18,8 +19,10 @@ function App() {
       <CssBaseline />
       <Home />
       <About />
-      <br/><br/>
+      <br /><br />
       <Portfolios />
+      <br /><br />
+      <Contact />
 
     </div>
   );
