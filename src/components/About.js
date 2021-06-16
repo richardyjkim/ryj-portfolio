@@ -65,7 +65,7 @@ export default function About() {
   return (
     <React.Fragment>
       <Container maxWidth="xl" id='about'>
-        <div className={classes.root} style={{ background: 'rgba(255,255,204,0.2)', height: '48vw', borderStyle: 'ridge' }}>
+        <div className={classes.root} style={{ background: 'rgba(255,255,204,0.2)', height: '58vw', borderStyle: 'ridge' }}>
           <Grid container spacing={1}>
             <Grid item>
               <ButtonBase className={classes.image}>

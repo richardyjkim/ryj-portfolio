@@ -18,7 +18,6 @@ const useStyles = makeStyles((theme) => ({
   textField: {
     marginLeft: theme.spacing(1),
     marginRight: theme.spacing(1),
-    width: '25ch',
   },
   content: {
     display: "flex",
@@ -40,8 +39,8 @@ const useStyles = makeStyles((theme) => ({
     margin: "3.5vw"
   },
   form: {
-    width: "45vw",
-    margin: '1vw'
+    maxWidth: "45vw",
+    margin: '0.4vw',
   },
   goHome: {
     color: '#fff',
@@ -83,11 +82,11 @@ export default function Contact() {
 
   return (
     <React.Fragment>
-      <Container maxWidth="xl" id='contact'>
-        <div className={classes.root} style={{ background: 'rgba(0,0,0,0.3)', height: '35vw', borderStyle: 'ridge' }}>
-          <Grid container spacing={1}>
-            <Grid item xs={6} sm container>
-              <Grid item xs container direction="column" spacing={1}>
+      <Container maxWidth="xl" id='contact' style={{ height: "48vw" }}>
+        <div className={classes.root} style={{ background: 'rgba(0,0,0,0.3)', height: '45vw', borderStyle: 'ridge' }}>
+          <Grid container >
+            <Grid item xs={6} sm={6} container>
+              <Grid item xs container direction="column" >
                 <Grid item xs>
                   <Typography className={classes.content}>
                     Contact Me
@@ -106,39 +105,42 @@ export default function Contact() {
                 </Grid>
               </Grid>
             </Grid>
-            <Grid item>
-              <form autoComplete="off" onSubmit={handleFormSubmit} className={classes.form} >
-                {inputFieldValues.map((inputFieldValue, index) => {
-                  return (
-                    <TextField
-                      className={classes.form}
-                      variant='outlined'
-                      key={index}
-                      onChange={handleInputValue}
-                      onBlur={handleInputValue}
-                      name={inputFieldValue.name}
-                      label={inputFieldValue.label}
-                      error={errors[inputFieldValue.name]}
-                      multiline={inputFieldValue.multiline ?? false}
-                      fullWidth
-                      rows={inputFieldValue.rows ?? 1}
-                      autoComplete="none"
-                      {...(errors[inputFieldValue.name] && {
-                        error: true,
-                        helperText: errors[inputFieldValue.name]
-                      })}
-                    />
-                  )
-                })}
-                <Button
-                  variant="contained"
-                  type="submit"
-                  color="secondary"
-                  disabled={!formIsValid()}
-                >
-                  Send Message
-      </Button>
-              </form>
+            <Grid item xs={6} sm={6} container>
+              <Grid item xs container direction="column">
+                <Grid item xs>
+                  <form autoComplete="off" onSubmit={handleFormSubmit} className={classes.form} >
+                    {inputFieldValues.map((inputFieldValue, index) => {
+                      return (
+                        <TextField xs={6} sm={6} style={{ margin: "1vw" }}
+                          variant='outlined'
+                          key={index}
+                          onChange={handleInputValue}
+                          onBlur={handleInputValue}
+                          name={inputFieldValue.name}
+                          label={inputFieldValue.label}
+                          error={errors[inputFieldValue.name]}
+                          multiline={inputFieldValue.multiline ?? false}
+                          fullWidth
+                          rows={inputFieldValue.rows ?? 1}
+                          autoComplete="none"
+                          {...(errors[inputFieldValue.name] && {
+                            error: true,
+                            helperText: errors[inputFieldValue.name]
+                          })}
+                        />
+                      )
+                    })}
+                    <Button style={{ margin: "1.5vh" }}
+                      variant="contained"
+                      type="submit"
+                      color="primary"
+                      disabled={!formIsValid()}
+                    >
+                      Send Message
+                </Button>
+                  </form>
+                </Grid>
+              </Grid>
             </Grid>
           </Grid>
         </div>

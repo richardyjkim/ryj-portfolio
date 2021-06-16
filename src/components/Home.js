@@ -12,7 +12,7 @@ const useStyles = makeStyles((theme) => ({
     display: 'flex',
     justifyContent: "center",
     alignItems: 'center',
-    height: '85vw',
+    height: '80vw',
     fontFamily: 'Nunito',
   },
   appbar: {
@@ -38,7 +38,8 @@ const useStyles = makeStyles((theme) => ({
   goDown: {
     color: '#fff',
     fontSize: '4vw',
-    textAlign: 'center',
+    display: 'flex',
+    justifyContent: 'center'
   }
 }));
 

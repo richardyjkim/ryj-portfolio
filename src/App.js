@@ -19,11 +19,8 @@ function App() {
       <CssBaseline />
       <Home />
       <About />
-      <br /><br />
       <Portfolios />
-      <br /><br />
       <Contact />
-
     </div>
   );
 }
