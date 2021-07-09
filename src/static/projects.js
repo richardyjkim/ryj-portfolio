@@ -3,13 +3,13 @@ const projects = [
     name: "Pick'em",
     description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse non lorem sed diam ultricies condimentum. Fusce in nunc justo. Quisque elementum leo ornare, hendrerit neque vel, rhoncus justo. Aenean in velit id justo rutrum dapibus.",
     image: process.env.PUBLIC_URL + '/images/portfolio/pickem.png',
-    url: "https://github.com/richardyjkim/my-first-project"
+    url: "https://richardyjkim.github.io/my-first-project/"
   },
   {
     name: "Mind Setter",
     description: " Praesent viverra faucibus ex id sodales. Mauris eget ex sed orci porta euismod. Nulla feugiat enim vitae nisi tincidunt auctor. Praesent hendrerit nulla diam, eget tincidunt nulla blandit nec.",
     image: process.env.PUBLIC_URL + '/images/portfolio/mindsetter.png',
-    url: "https://github.com/richardyjkim/second-project"
+    url: "https://enigmatic-bayou-14711.herokuapp.com/"
   },
   {
     name: "Food Festival",
@@ -18,22 +18,22 @@ const projects = [
     url: "https://github.com/richardyjkim/food-fastival"
   },
   {
-    name: "Password Generator",
+    name: "Furever Home",
     description: "Nunc finibus, id feugiat nulla. Suspendisse in smi id aliquet euismod, dolor turpis ultricies lectus, sit amet viverra felis turpis ac dolor. Aliquam erat volutpat.",
-    image: process.env.PUBLIC_URL + '/images/portfolio/password.png',
-    url: "https://github.com/richardyjkim/password-generator"
+    image: process.env.PUBLIC_URL + '/images/portfolio/furever.png',
+    url: "https://shielded-castle-31591.herokuapp.com/"
   },
   {
     name: "Weather Dashboard",
     description: "Aenean bibendum erat leo, id imperdiet quam tincidunt sit amet. Cras urna neque, ullamcorper sit amet tempor ut, venenatis nec lorem.",
     image: process.env.PUBLIC_URL + '/images/portfolio/weather.png',
-    url: "https://github.com/richardyjkim/weather-dashboard"
+    url: "https://richardyjkim.github.io/weather-dashboard/"
   },
   {
     name: "Workday Scheduler",
     description: "Suspendisse magna lacus, suscipit in elementum sit amet, faucibus vel dui you we need one more line to grid to be fit, cnwiqsdk pqwkd loes.",
     image: process.env.PUBLIC_URL + '/images/portfolio/workday.png',
-    url: "https://github.com/richardyjkim/workday-scheduler"
+    url: "https://richardyjkim.github.io/workday-scheduler/"
   },
 ];
 
