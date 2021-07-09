@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.js": "/ryj-portfolio/static/js/main.b257509a.chunk.js",
-    "main.js.map": "/ryj-portfolio/static/js/main.b257509a.chunk.js.map",
+    "main.js": "/ryj-portfolio/static/js/main.dc31b70c.chunk.js",
+    "main.js.map": "/ryj-portfolio/static/js/main.dc31b70c.chunk.js.map",
     "runtime-main.js": "/ryj-portfolio/static/js/runtime-main.29422ebb.js",
     "runtime-main.js.map": "/ryj-portfolio/static/js/runtime-main.29422ebb.js.map",
     "static/js/2.057cf39a.chunk.js": "/ryj-portfolio/static/js/2.057cf39a.chunk.js",
@@ -12,6 +12,6 @@
   "entrypoints": [
     "static/js/runtime-main.29422ebb.js",
     "static/js/2.057cf39a.chunk.js",
-    "static/js/main.b257509a.chunk.js"
+    "static/js/main.dc31b70c.chunk.js"
   ]
 }
