@@ -22,7 +22,7 @@ function Footer() {
 
   return (
     <React.Fragment>
-      <Container maxWidth="xl" id='footer' style={{ backgroundColor: "rgba(243, 243, 136, 0.3)" }}>
+      <Container maxWidth="xl" id='footer' style={{ backgroundColor: "rgba(232, 236, 241, 0.85)" }}>
         <div className={classes.root}>
           © 2021 Richard Youngje Kim, UCB, bootcamp, Portfolio. Passonate and Hubmle.
           All Rights Reserved.

@@ -84,7 +84,7 @@ export default function Contact() {
   return (
     <React.Fragment>
       <Container maxWidth="xl" id='contact' style={{ height: "50vw" }}>
-        <div className={classes.root} style={{ background: 'rgba(0,0,0,0.3)', height: '45vw', borderStyle: 'ridge' }}>
+        <div className={classes.root} style={{ background: 'rgba(232, 236, 241, 0.85)', height: '45vw', borderStyle: 'ridge' }}>
           <Grid container >
             <Grid item xs={6} sm={6}>
               <Grid item xs container direction="column" >
