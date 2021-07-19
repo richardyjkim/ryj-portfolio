@@ -80,6 +80,7 @@ export default function About() {
                   </Typography>
                   <Typography variant="body2" className={classes.description} >
                     Full-Stack web developer leveraging background in communication to provide unique perspectives on how end-users interact with websites and software platforms.
+                    <br /><br />
                     Earned a certificate in Full Stack Web Development from the University of California Berkeley Coding Boot Camp.
 
                   </Typography>
