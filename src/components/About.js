@@ -77,24 +77,23 @@ export default function About() {
                 <Grid item xs>
                   <Typography className={classes.content}>
                     About Me
-                </Typography>
+                  </Typography>
                   <Typography variant="body2" className={classes.description} >
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                    Incidunt magnam aspernatur saepe distinctio porro eum
-                    beatae quaerat laboriosam non iusto. Molestias, impedit nam?
-                    Atque rem minima aut eius, enim nam!
+                    Full-Stack web developer leveraging background in communication to provide unique perspectives on how end-users interact with websites and software platforms.
+                    Earned a certificate in Full Stack Web Development from the University of California Berkeley Coding Boot Camp.
+
                   </Typography>
                   <br />
                   <Typography variant="body2" className={classes.description} >
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                    Incidunt magnam aspernatur saepe distinctio porro eum
-                    beatae quaerat laboriosam non iusto. Molestias, impedit nam?
-                    Atque rem minima aut eius, enim nam!
+                    Innovative problem-solver who is passionate about developing apps.
+                    Energetic adopter who enjoys and is eager to adopt new skills in the new projects.
+                    Strengths in creativity, teamwork, and building projects from ideation to execution.
+                    Know the importance of team work and enjoy and proud to collaborate with others
                   </Typography>
                   <br />
                   <Typography className={classes.content} style={{ color: '#000' }}>
                     Find Me On
-                </Typography>
+                  </Typography>
                   <Grid className={classes.icon} >
                     <Scroll to="contact" smooth={true}><IconButton><EmailIcon /> </IconButton></Scroll>
                     <IconButton aria-label="linkedin.com" onClick={() => window.open('https://www.linkedin.com/in/richard-kim-670262204/')}><LinkedInIcon /> </IconButton>

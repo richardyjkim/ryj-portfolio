@@ -40,7 +40,7 @@ const useStyles = makeStyles((theme) => ({
     margin: "3.5vw"
   },
   form: {
-    maxWidth: "45vw",
+    maxWidth: "42vw",
     margin: '0.4vw',
   },
   goHome: {
@@ -83,10 +83,10 @@ export default function Contact() {
 
   return (
     <React.Fragment>
-      <Container maxWidth="xl" id='contact' style={{ height: "48vw" }}>
+      <Container maxWidth="xl" id='contact' style={{ height: "50vw" }}>
         <div className={classes.root} style={{ background: 'rgba(0,0,0,0.3)', height: '45vw', borderStyle: 'ridge' }}>
           <Grid container >
-            <Grid item xs={6} sm={6} container>
+            <Grid item xs={6} sm={6}>
               <Grid item xs container direction="column" >
                 <Grid item xs>
                   <Typography className={classes.content}>
@@ -97,21 +97,21 @@ export default function Contact() {
                     if you have any questions please do not desitate to contact me.
                     if you could leave breif message here, I will surely get back to you as soon as possible.
                     Once Again Thank you so much for visiting. Please download my resume clicking download icon. or we will simple take you back to top with home icon.
-                    </Typography>
+                  </Typography>
                   <Scroll to="home" smooth={true}>
                     <IconButton>
                       <HomeIcon className={classes.goHome} />
                     </IconButton>
                   </Scroll>
-                  <IconButton aria-label="resume" onClick={() => window.open('https://drive.google.com/file/d/1hUiglyo0XzJdC2j-yF9FdvdVOi0D4YZb/view')}>
+                  <IconButton aria-label="resume" onClick={() => window.open('https://drive.google.com/file/d/1BnVBNVEvUC9jQvPTd9DH7HTv3Pg42CHT/view?usp=view')}>
                     <GetAppIcon className={classes.goHome} />
                   </IconButton>
                 </Grid>
               </Grid>
             </Grid>
-            <Grid item xs={6} sm={6} container>
+            <Grid item xs={6} sm={6} style={{ position: "relative" }} container>
               <Grid item xs container direction="column">
-                <Grid item xs>
+                <Grid item xs={12} sm={12}>
                   <form autoComplete="off" onSubmit={handleFormSubmit} className={classes.form} >
                     {inputFieldValues.map((inputFieldValue, index) => {
                       return (
@@ -141,7 +141,7 @@ export default function Contact() {
                       disabled={!formIsValid()}
                     >
                       Send Message
-                </Button>
+                    </Button>
                   </form>
                 </Grid>
               </Grid>
