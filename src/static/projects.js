@@ -1,37 +1,37 @@
 const projects = [
   {
     name: "Pick'em",
-    description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse non lorem sed diam ultricies condimentum. Fusce in nunc justo. Quisque elementum leo ornare, hendrerit neque vel, rhoncus justo. Aenean in velit id justo rutrum dapibus.",
+    description: "Interactive game and match schedule check application where baseball fans to choose a game winning team for certain matches and check results. Application built using basic html/css with thrid party baseball API linked.",
     image: process.env.PUBLIC_URL + '/images/portfolio/pickem.png',
     url: "https://richardyjkim.github.io/my-first-project/"
   },
   {
     name: "Mind Setter",
-    description: " Praesent viverra faucibus ex id sodales. Mauris eget ex sed orci porta euismod. Nulla feugiat enim vitae nisi tincidunt auctor. Praesent hendrerit nulla diam, eget tincidunt nulla blandit nec.",
+    description: "Interactive multi-user social media application where users post, comment, like, delete their thoughts. Application integrated with Mysql as a Database, express server to run server. Deployed with Heroku, using JawsDB to hold Data from Mysql",
     image: process.env.PUBLIC_URL + '/images/portfolio/mindsetter.png',
     url: "https://enigmatic-bayou-14711.herokuapp.com/"
   },
   {
-    name: "Food Festival",
-    description: "Cras id feugiat nulla. Suspendisse in sapien sem. Ut eget dui felis. Morbi hendrerit eros lacus, id ornare ante sodales lacinia.id feugiat nulla. Suspendisse in so",
-    image: process.env.PUBLIC_URL + '/images/portfolio/foodfestival.png',
-    url: "https://github.com/richardyjkim/food-fastival"
+    name: "Book Search Engine",
+    description: "Interactive book search engine where yours can search what kind of book they want to search for and also multi user accessible which they can save their books. React, Apollo-server, GraphQL used. Deployed through Heroku",
+    image: process.env.PUBLIC_URL + '/images/portfolio/booksearch.png',
+    url: "http://nameless-mesa-79274.herokuapp.com/"
   },
   {
     name: "Furever Home",
-    description: "Nunc finibus, id feugiat nulla. Suspendisse in smi id aliquet euismod, dolor turpis ultricies lectus, sit amet viverra felis turpis ac dolor. Aliquam erat volutpat.",
+    description: "Interactive dog-adoption application using React and Apollo-server, and GraphQL, MongoDB for Database, where user see which dogs are available to adopt from the shelter.",
     image: process.env.PUBLIC_URL + '/images/portfolio/furever.png',
     url: "https://shielded-castle-31591.herokuapp.com/"
   },
   {
     name: "Weather Dashboard",
-    description: "Aenean bibendum erat leo, id imperdiet quam tincidunt sit amet. Cras urna neque, ullamcorper sit amet tempor ut, venenatis nec lorem.",
+    description: "Interactive weather forecasting application using HTML/CSS for front end, Third Party API (openweathermap) used to track current city weather.",
     image: process.env.PUBLIC_URL + '/images/portfolio/weather.png',
     url: "https://richardyjkim.github.io/weather-dashboard/"
   },
   {
     name: "Workday Scheduler",
-    description: "Suspendisse magna lacus, suscipit in elementum sit amet, faucibus vel dui you we need one more line to grid to be fit, cnwiqsdk pqwkd loes.",
+    description: "Interactive Schedule Planning application where user can save, track their schedule on corresponding time. HTML CSS front end, Jquery to function.",
     image: process.env.PUBLIC_URL + '/images/portfolio/workday.png',
     url: "https://richardyjkim.github.io/workday-scheduler/"
   },

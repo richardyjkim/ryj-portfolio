@@ -24,7 +24,8 @@ function Footer() {
     <React.Fragment>
       <Container maxWidth="xl" id='footer' style={{ backgroundColor: "rgba(232, 236, 241, 0.85)" }}>
         <div className={classes.root}>
-          © 2021 Richard Youngje Kim, UCB, bootcamp, Portfolio. Passonate and Hubmle.
+          © 2021 Richard Youngje Kim, UCB, bootcamp, Portfolio. Passonate and hubmle.
+          <br></br>
           All Rights Reserved.
           </div>
       </Container>

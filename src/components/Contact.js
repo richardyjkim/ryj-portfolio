@@ -93,10 +93,11 @@ export default function Contact() {
                     Contact Me
                   </Typography>
                   <Typography variant="body2" className={classes.description} >
-                    I truely Thank you for visiting my website,
-                    if you have any questions please do not desitate to contact me.
-                    if you could leave breif message here, I will surely get back to you as soon as possible.
-                    Once Again Thank you so much for visiting. Please download my resume clicking download icon. or we will simple take you back to top with home icon.
+                    I truly thank you for vising my website, 
+                    if you have any questions please do not hesitate to contact me. 
+                    If you would leave a brief message here I will get back to you as soon as possible. 
+                    Once again, thank you so much for visiting. 
+                    Please download my resume by clicking the download icon.
                   </Typography>
                   <Scroll to="home" smooth={true}>
                     <IconButton>

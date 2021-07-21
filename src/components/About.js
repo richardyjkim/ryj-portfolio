@@ -36,7 +36,7 @@ const useStyles = makeStyles((theme) => ({
     justityContent: "center",
     flexDirection: "column",
     alignItems: "center",
-    margin: '4vw'
+    margin: '3vw'
   },
   description: {
     fontFamily: 'Nunito',

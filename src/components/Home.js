@@ -85,7 +85,8 @@ function Home() {
         collapsedHeight={50}>
         <div className={classes.container}>
           <h1 className={classes.title}>Welcome to YjWorld <br /></h1>
-          <h2 style={{fontSize:'1rem'}}>+ and I develop websites</h2>
+          <h2 style={{ fontSize: '1rem' }}>+ and I develop websites</h2>
+          <h2 style={{ fontSize: '1rem' }}>- email: richardyjkim@gmail.com</h2>
           <Scroll to="about" smooth={true}>
             <IconButton>
               <ExpandMoreIcon className={classes.goDown} />
@@ -93,7 +94,7 @@ function Home() {
           </Scroll>
         </div>
       </Collapse>
-    </div>
+    </div >
   );
 }
 

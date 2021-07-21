@@ -25,7 +25,7 @@ const useStyles = makeStyles({
   description: {
     fontFamily: 'Nunito',
     fontWeight: 'bold',
-    fontSize: '0.5vw',
+    fontSize: '0.8vw',
     color: '#ddd'
   },
   button: {
