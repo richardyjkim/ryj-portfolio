@@ -7,7 +7,7 @@ const projects = [
   },
   {
     name: "Mind Setter",
-    description: "Interactive multi-user social media application where users post, comment, like, delete their thoughts. Application integrated with Mysql as a Database, express server to run server. Deployed with Heroku, using JawsDB to hold Data from Mysql",
+    description: "Interactive multi-user social media application where users post, comment, like, delete their thoughts. Application integrated with Mysql as a Database. Deployed with Heroku, using JawsDB to hold Data from Mysql.",
     image: process.env.PUBLIC_URL + '/images/portfolio/mindsetter.png',
     url: "https://enigmatic-bayou-14711.herokuapp.com/"
   },
