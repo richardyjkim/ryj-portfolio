@@ -5,6 +5,8 @@ import CardContent from '@material-ui/core/CardContent';
 import CardMedia from '@material-ui/core/CardMedia';
 import CardActionArea from '@material-ui/core/CardActionArea';
 import Typography from '@material-ui/core/Typography';
+import CardActions from '@material-ui/core/CardActions';
+import Button from '@material-ui/core/Button';
 
 
 const useStyles = makeStyles({
@@ -57,6 +59,11 @@ export default function PortfolioCard({ project }) {
           </Typography>
         </CardContent>
       </CardActionArea>
+      <CardActions>
+        <Button variant="contained" size="small" color="defualt" onClick={()=> window.open(project.github)}>
+          Github
+        </Button>
+      </CardActions>
     </Card>
   );
 }
